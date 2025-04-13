@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoVista — Smart Waste Management</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">EcoVista</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#app-features">Features</a></li>
+        <li><a href="#architecture">System</a></li>
+        <li><a href="#smart-impact">Impact</a></li>
+        <li><a href="#download-app">App</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeToggle" title="Toggle Dark Mode">🌓Dark Mode</button>
+    </nav>
+    
+    <section class="hero">
+      <h1>Smart Waste, Clean Future</h1>
+      <p>EcoVista — Your Smart Sidekick for a Cleaner Community</p>
+      <a href="#app-features" class="btn">Explore Features</a>
+    </section>
+  </header>
+
+  <main>
+
+    <button id="scrollToTop" title="Go to top">↑</button>
+
+    <section id="about" class="about fade-in">
+        <h2>About EcoVista</h2>
+      
+        <p>
+          EcoVista is a next-generation smart waste management platform built to tackle the growing sanitation challenges in urban environments. Overflowing bins, improper disposal, and lack of public awareness have long plagued our cities. EcoVista transforms this broken system into a smart, efficient, and community-driven ecosystem.
+        </p>
+      
+        <p>
+          At its core, EcoVista leverages the power of AI and real-time data to make waste management smarter. Our <strong>TrashScan</strong> tool uses machine learning to help users identify the correct way to dispose of their waste—organic, recyclable, or hazardous. <strong>BinSense</strong> enables continuous monitoring of public bins to ensure timely waste collection. With <strong>PredictBin</strong>, we forecast bin overflow using historical patterns, helping municipalities optimize collection routes and schedules.
+        </p>
+      
+        <p>
+          But EcoVista goes beyond infrastructure—it puts people at the center. Through our <strong>EcoPoints</strong> system, users are rewarded for proper waste disposal by scanning QR codes on smart bins. <strong>CleanConnect</strong> empowers citizens to report issues like overflowing bins or unclean areas directly to local authorities, bridging the gap between the community and the municipal systems.
+        </p>
+      
+        <p>
+          Administrators can access <strong>WasteWatch</strong>, a powerful dashboard that visualizes bin status, alerts, and user-reported issues in real-time. This data-driven approach leads to faster responses, better planning, and cleaner cities.
+        </p>
+      
+        <p>
+          EcoVista aligns with <strong>Sustainable Development Goal 11 (Sustainable Cities and Communities)</strong> by promoting responsible consumption, reducing waste-related pollution, and enhancing civic engagement. Our mission is simple: build cleaner, smarter, and more sustainable cities where technology and people work hand-in-hand for a better tomorrow.
+        </p>
+      
+        <h3>
+          EcoVista is more than an app or a dashboard—it's a movement toward conscious urban living. Join us as we clean up our cities, one smart bin at a time.
+        </h3>
+      </section>
+      
+      <div class="ecovista-logo-wrapper fade-in">
+        <img src="image.png" alt="EcoVista Logo" class="ecovista-logo" />
+      </div>
+      
+    <section id="app-features" class="app-features">
+      <h2>Key Features</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <img src="https://cdn.dribbble.com/users/375827/screenshots/5507228/detalle-scan.gif" alt="TrashScan">
+          <h3>TrashScan</h3>
+          <p>AI-powered waste classification tool that guides users for correct disposal using image recognition.</p>
+        </div>
+        <div class="feature-item">
+          <img src="https://ugokawaii.com/wp-content/uploads/2023/06/trash-can.gif" alt="BinSense">
+          <h3>BinSense</h3>
+          <p>Monitors bin fill levels in real-time using IoT sensors to avoid overflow and enable timely collection.</p>
+        </div>
+        <div class="feature-item">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/003/003/265/small_2x/predictive-analytics-concepts-vector.jpg" alt="PredictBin">
+          <h3>PredictBin</h3>
+          <p>Predicts bin overflow based on historical trends to optimize route planning and collection frequency.</p>
+        </div>
+        <div class="feature-item">
+          <img src="https://cdn-icons-gif.flaticon.com/9284/9284646.gif" alt="EcoPoints">
+          <h3>EcoPoints</h3>
+          <p>Gamified rewards system using QR codes that gives users points for disposing waste correctly.</p>
+        </div>
+        <div class="feature-item">
+          <img src="https://static.vecteezy.com/system/resources/previews/008/693/508/original/holding-the-camera-with-single-hands-illustration-cartoon-vector.jpg" alt="CleanConnect">
+          <h3>CleanConnect</h3>
+          <p>Allows citizens to report sanitation issues directly to authorities via a simple mobile interface.</p>
+        </div>
+        <div class="feature-item">
+          <img src="https://i.pinimg.com/originals/da/c7/13/dac71367c46f3f6cb5fb3cefbe305917.gif" alt="WasteWatch">
+          <h3>WasteWatch</h3>
+          <p>Admin dashboard with real-time bin data, heatmaps, and user reports for efficient management.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture" class="system-architecture fade-in">
+        <h2>System Architecture</h2>
+        <div class="architecture-wrapper">
+          <div class="architecture-text">
+            <p><strong>EcoVista</strong> is built as a modular, AI-driven system that seamlessly connects users, bins, and municipal authorities through an integrated digital infrastructure.</p>
+            
+            <p>At the front, users interact via a web/mobile app powered by <strong>TrashScan</strong> for AI waste classification and <strong>EcoPoints</strong> for QR-based rewards. Meanwhile, <strong>BinSense</strong> sensors send real-time bin data to the backend using Firebase Realtime Database.</p>
+      
+            <p>Our <strong>PredictBin</strong> engine forecasts bin overflows using historical trends. <strong>CleanConnect</strong> enables citizen issue reporting, while administrators monitor everything through the <strong>WasteWatch Dashboard</strong> — complete with data visualizations, alerts, and maps.</p>
+      
+            <p>The system leverages Teachable Machine (AI), Firebase (backend), Chart.js (visuals), and Google Maps API (location mapping) — making EcoVista scalable, interactive, and efficient.</p>
+          </div>
+          <div class="architecture-diagram fade-in-bounce">
+            <img src="image2.png" alt="System Architecture Diagram">
+          </div>
+        </div>
+      </section>
+      
+
+    <section id="smart-impact" class="smart-impact fade-in">
+        <h2>Smart City Impact</h2>
+        <div class="impact-container">
+          <div class="impact-text">
+            <p><strong>EcoVista</strong> goes beyond waste management — it is a cornerstone of building smarter, cleaner, and more connected cities. By integrating real-time bin monitoring, AI-powered waste sorting, and predictive overflow alerts, it ensures timely intervention, reduces manual labor, and improves urban hygiene.</p>
+      
+            <p>With data-driven insights, municipal bodies can allocate resources more efficiently, reducing fuel consumption and operational costs. Citizens benefit from cleaner surroundings, gamified incentives, and a sense of ownership in keeping their cities green.</p>
+      
+            <p>EcoVista fosters collaboration between technology and community, aligning perfectly with the Smart City Mission by transforming public services into seamless, sustainable systems. It’s not just smart waste — it’s smart governance, smart living, and a smarter future.</p>
+          </div>
+          <div class="impact-image fade-in-bounce">
+            <img src="https://www.vernicirioverde.it/wp-content/uploads/2018/10/smart-city-definizione-e1540392698158.jpeg" alt="Smart City Illustration" />
+          </div>
+          
+        </div>
+      </section>
+      <section id="download-app" class="download-app fade-in">
+        <div class="download-wrapper">
+          <div class="download-text">
+            <h2>Get the EcoVista App</h2>
+            <p>Scan waste, earn EcoPoints, and report issues — all from your phone. Start cleaning smarter today!</p>
+            <div class="download-buttons">
+              <a href="#" class="store-btn google-play">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" />
+              </a>
+              <a href="#" class="store-btn app-store">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+              </a>
+            </div>
+          </div>
+          <div class="download-image">
+            <img src="image3.png" alt="App Preview" />
+          </div>
+        </div>
+      </section>
+      
+
+  </main>
+
+  <<footer id="contact" class="get-involved">
+    <div class="footer-content">
+      <h2>Get Involved</h2>
+      <p>Join us in making cities cleaner and smarter — one bin at a time!</p>
+  
+      <div class="get-involved-options">
+        <div class="option">
+          <h3>📢 Report an Issue</h3>
+          <p>See an overflowing bin or sanitation issue? Let us know so we can take action.</p>
+          <a href="#" class="btn">Report via CleanConnect</a>
+        </div>
+        <div class="option">
+          <h3>🤝 Join the Movement</h3>
+          <p>Become a part of our eco-community. Earn EcoPoints, spread awareness, and make an impact!</p>
+          <a href="#" class="btn">Join Now</a>
+        </div>
+        <div class="option">
+          <h3>📬 Get in Touch</h3>
+          <p>Questions, feedback, or collaboration ideas? We’d love to hear from you.</p>
+          <a href="mailto:ecovista.team@gmail.com" class="btn">Contact Us</a>
+        </div>
+      </div>
+  
+      <p style="margin-top: 2rem;">&copy; 2025 EcoVista | Built with 💚 by CodePhreaks</p>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
